@@ -67,16 +67,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".takshalwall"
-            android:label="Wall"
-            android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".editor"
-            android:label="@string/title_activity_editor"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".About"
             android:label="@string/title_activity_about"
             android:screenOrientation="portrait" />

@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),editor.class));
+
             }
         });
 
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity
                     .setNeutralButton("Rate us", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://play.google.com/store/apps/details?id=com.facebook.katana")));
+                            startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://play.google.com/store/apps/details?id=com.takshak.mace.takshak2k18user")));
                         }
                     })
                     .setPositiveButton(Html.fromHtml("<font color='#000000'>Yes</font>"), new DialogInterface.OnClickListener() {
@@ -154,9 +154,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.wall) {
-            startActivity(new Intent(getApplicationContext(),takshalwall.class));
-
+        if (id == R.id.rate) {
+            startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://play.google.com/store/apps/details?id=com.takshak.mace.takshak2k18user")));
         }
         if (id == R.id.notify){
             goto_notification();
@@ -226,8 +225,7 @@ public class MainActivity extends AppCompatActivity
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/OfficialTakshak"));
                 startActivity(intent);
             }
-        }else if (id == R.id.Takshakwall){
-            startActivity(new Intent(getApplicationContext(),takshalwall.class));
+        }else {
 
         }
 

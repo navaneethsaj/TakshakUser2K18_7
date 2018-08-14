@@ -8,8 +8,8 @@
         app:showAsAction="ifRoom"
         android:title="notification" />
     <item
-        android:id="@+id/wall"
+        android:id="@+id/rate"
         android:orderInCategory="100"
-        android:title="Takshak Wall"
+        android:title="Rate Us"
         app:showAsAction="never" />
 </menu>
